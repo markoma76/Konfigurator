@@ -1,0 +1,173 @@
+#ram{
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top:40px;left: 100px;
+    border: 3px solid white;
+    color: aliceblue;
+    background-color: red;
+    text-align: left;
+}
+
+
+.katanac{
+    font-family: Crtani;
+    font-size: 30px;
+}
+
+.katanac:hover{
+    color: yellow;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+#upit_kon{
+    display:none;
+    position: absolute;
+    top: 20%;left: 40%;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px red;
+    width: 450px;
+    height: 130px;
+    border: 15px outset rgb(126, 126, 126);
+    background-color: darkgrey;
+}
+
+#snimi_kon{
+    position: relative;
+    top: -20px;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#naziv_kon{
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    background-color: black;
+   
+}
+
+#ostava_kon{
+    display: none;
+    position: absolute;
+    top: 50px;left: 50px;
+    border: 15px outset rgb(126, 126, 126);
+    background-color: darkgrey;
+    color: brown;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 5px black;
+    padding-left: 20PX;padding-right: 20PX;
+}
+
+.kanta{
+    font-family: Crtani;
+    color: black;
+    font-size: 40px;
+}
+
+.kanta:hover {
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+#brisanje_kon{
+    display: none;
+    position: absolute;
+    top: 50px;left: 50px;
+    height: 160px;width: 700px;
+    border: 15px outset rgb(126, 126, 126);
+    background-color: darkgrey;
+    color: brown;
+    
+}
+
+#paragraf{
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 5px black;
+    padding-left: 20PX;padding-right: 20PX;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    font-family: Sport;
+
+
+}
+
+.odluka{
+
+    margin-left: 100px;
+    display: inline;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0px 50px 0px 50px;
+    font-size: 35px;
+    text-align: center;
+    font-family: Sport;
+    color: aliceblue;
+}
+
+#da {
+    background-color: green;
+}
+
+#ne{
+    background-color: red;
+}
+
+#da:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+#ne:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+#rrr{
+    margin-top: 0px;
+    font-family: Tackasti;
+    font-size: 50px;
+    letter-spacing: 25px;
+    text-align: center;
+}
+
+#zatvori{
+    position: absolute;
+    top: 10px;right: 10px;
+    height: 40px;width: 40px;
+    color:white;
+    border: 4px inset white;
+    background-color: red;
+   
+}
+
+#zatvori :hover{
+    cursor: pointer;
+    color: yellow;
+
+}
+
+#slovox{
+    position: absolute;
+    top: -60px;right: -7px;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+#divovi{
+    position: relative;
+    top: -40px;
+    text-decoration: underline;
+}

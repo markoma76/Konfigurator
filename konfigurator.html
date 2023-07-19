@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfigurator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="slike/mis_ikona.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="konfog_graf.css" type="text/css" />
+    <link rel="stylesheet" href="fontovi.css" type="text/css" />
+    <link rel="stylesheet" href="css/podrum.css">
+  </head>
+  <body>
+<!-- ************* naslovna strana **************** -->
+    <header>
+        <h3 class="meni" id="podrum">ostava</h3>
+        <h1 id="naslov">konfigurator</h1>
+        <h3 class="meni" id="yoopaa">pdf</h3>
+    </header>
+<!-- *********** kreiranje dela za izbor konfiguracije *********** -->
+    <article id="pocetna">
+        <table>
+
+          <thead>
+            <th>Komponenta</th>
+            <th>Proizvodjac</th>
+            <th>Oznaka</th>
+            <th>Prodavac</th>
+            <th>Cena</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="komponenta">Procesor</td>
+              <td><input class="poizvodjac" list="procesor" id="crc"></td>
+              <td><input type="text" id="pr_oznaka"></td>
+              <td><input list="prodavac"  id="pr_prodavac"></td>
+              <td><input type="text" id="pr_cena"></td>
+            </tr>
+              
+            <tr>
+              <td class="komponenta">P Hladnjak</td>
+              <td><input class="poizvodjac" list="kuleri" id="cool"></td>
+              <td><input type="text" id="hl_oznaka"></td>
+              <td> <input list="prodavac"  id="hl_prodavac"></td>
+              <td><input type="text" id="hl_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">Maticna Ploca</td>
+              <td><input class="poizvodjac" list="gfx" id="ploca"></td>
+              <td><input type="text" id="mp_oznaka"></td>
+              <td> <input list="prodavac"  id="mp_prodavac"></td>
+             <td><input type="text" id="mp_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">Graficka Karta</td>
+              <td><input class="poizvodjac" list="gfx" id="grafika"></td>
+              <td><input type="text" id="gk_oznaka"></td>
+              <td> <input list="prodavac"  id="gk_prodavac"></td>
+              <td><input type="text" id="gk_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">Memorija</td>
+              <td><input class="poizvodjac" list="memorije" id="mems"></td>
+              <td><input type="text" id="mm_oznaka"></td>
+              <td> <input list="prodavac"  id="mm_prodavac"></td>
+              <td><input type="text" id="mm_cena"></td>
+            </tr>
+           
+            <tr>
+              <td class="komponenta">HDD 1</td>
+              <td><input class="poizvodjac" list="hdd" id="hard1"></td>
+              <td><input type="text" id="hd1_oznaka"></td>
+              <td> <input list="prodavac"  id="hd1_prodavac"></td>
+             <td><input type="text" id="hd1_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">SSD 1</td>
+              <td><input class="poizvodjac" list="ssd" id="solid1"></td>
+              <td><input type="text" id="sd1_oznaka"></td>
+              <td> <input list="prodavac"  id="sd1_prodavac"></td>
+              <td><input type="text" id="sd1_cena"></td>
+            </tr>
+           
+            <tr>
+              <td class="komponenta">HDD 2</td>
+               <td><input class="poizvodjac" list="hdd" id="hard2"></td>
+              <td><input type="text" id="hd2_oznaka"></td>
+              <td> <input list="prodavac"  id="hd2_prodavac"></td>
+             <td><input type="text" id="hd2_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">SSD 2</td>
+               <td><input class="poizvodjac" list="ssd" id="solid2"></td>
+              <td><input type="text" id="sd2_oznaka"></td>
+              <td> <input list="prodavac"  id="sd2_prodavac"></td>
+             <td><input type="text" id="sd2_cena"></td>
+            </tr>
+            <tr>
+              <td class="komponenta">Kuciste</td>
+               <td><input class="poizvodjac" list="kuciste" id="tower"></td>
+              <td><input type="text" id="tw_oznaka"></td>
+              <td> <input list="prodavac"  id="tw_prodavac"></td>
+              <td><input type="text" id="tw_cena"></td>
+            </tr>
+           
+            <tr>
+              <td class="komponenta">Napajanje</td>
+               <td><input class="poizvodjac" list="napajanje" id="pow"></td>
+              <td><input type="text" id="pw_oznaka"></td>
+              <td> <input list="prodavac"  id="pw_prodavac"></td>
+              <td><input type="text" id="pw_cena"></td>
+            </tr>
+            
+            <tr>
+              <td class="komponenta">opticki uredjaj</td>
+               <td><input class="poizvodjac" list="optika" id="cd"></td>
+             <td><input type="text" id="cd_oznaka"></td>
+              <td> <input list="prodavac"  id="cd_prodavac"></td>
+              <td><input type="text" id="cd_cena"></td>
+            </tr>
+            
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th>Periferije</th>
+              <th>Proizvodjac</th>
+              <th>Oznaka</th>
+              <th>Prodavac</th>
+              <th>Cena</th>
+            </tr>
+            <tr>
+              <td class="komponenta">monitor</td>
+               <td><input class="poizvodjac" list="monitori" id="mon"></td>
+               <td><input type="text" id="mn_oznaka"></td>
+              <td> <input list="prodavac"  id="mn_prodavac"></td>
+               <td><input type="text" id="mn_cena"></td>
+            </tr>
+
+            <tr>
+              <td class="komponenta">tastatura</td>
+               <td><input class="poizvodjac" list="tastature" id="kybrd"></td>
+               <td><input type="text" id="kb_oznaka"></td>
+              <td> <input list="prodavac"  id="kb_prodavac"></td>
+               <td><input type="text" id="kb_cena"></td>
+            </tr>
+
+            <tr>
+              <td class="komponenta">mis</td>
+               <td><input class="poizvodjac" list="misevi" id="mose"></td>
+               <td><input type="text" id="mi_oznaka"></td>
+              <td> <input list="prodavac"  id="mi_prodavac"></td>
+               <td><input type="text" id="mi_cena"></td>
+            </tr>
+
+            <tr>
+              <td class="komponenta">zvucnici</td>
+               <td><input class="poizvodjac" list="zvucnici" id="sound"></td>
+               <td><input type="text" id="zv_oznaka"></td>
+              <td> <input list="prodavac"  id="zv_prodavac"></td>
+               <td><input type="text" id="zv_cena"></td>
+            </tr>
+
+            <tr>
+              <td class="komponenta">slusalice</td>
+               <td><input class="poizvodjac" list="slusalice" id="slusa"></td>
+               <td><input type="text" id="sl_oznaka"></td>
+              <td> <input list="prodavac"  id="sl_prodavac"></td>
+               <td><input type="text" id="sl_cena"></td>
+            </tr>
+
+            <tr>
+              <td colspan="4" id="cena">Ukupno</td>
+               <td id="ukupno_cena">0</td>
+            </tr>
+          </tfoot>
+
+          <datalist id="procesor">
+            <option value="AMD"></option>
+            <option value="Intel"></option>
+       </datalist>
+
+          <datalist id="optika">
+             <option value="Asus"></option>
+             <option value="Gembird"></option>
+             <option value="Hitachi"></option>
+             <option value="HP"></option>
+             <option value="Lenovo"></option>
+             <option value="LG"></option>
+             <option value="LiteOn"></option>
+             <option value="Noname"></option>
+             <option value="Sandberg"></option>
+             <option value="Transcend"></option> 
+          </datalist>
+
+          <datalist id="napajanje">
+            <option value="Aerocool"></option>
+            <option value="Alcatroz"></option>
+            <option value="Antec"></option>
+            <option value="Armaggeddon"></option>
+            <option value="Asus"></option>
+            <option value="Azza"></option>
+            <option value="Be quiet!"></option>
+            <option value="Chieftec"></option>
+            <option value="Cooler Master"></option>
+            <option value="Corsair"></option>
+            <option value="EVGA"></option>
+            <option value="FSP"></option>
+            <option value="Gigabyte"></option>
+            <option value="IG-Max"></option>
+            <option value="Inter-Tech"></option>
+            <option value="Kolink"></option>
+            <option value="LC Power"></option>
+            <option value="Microstar"></option>
+            <option value="MQ Mission"></option>
+            <option value="MS Industrial"></option>
+            <option value="NJOY"></option>
+            <option value="NZXT"></option>
+            <option value="Raidmax"></option>
+            <option value="Raijintek"></option>
+            <option value="Redragon"></option>
+            <option value="RPC"></option>
+            <option value="Sama"></option>
+            <option value="Seagate"></option>
+            <option value="Seasonic"></option>
+            <option value="Sharkoon"></option>
+            <option value="SilentiumPC"></option>
+            <option value="Stars Solutions"></option>
+            <option value="Thermaltake"></option>
+            <option value="Zalman"></option>
+            <option value="Zeus"></option>
+          </datalist>
+
+
+          <datalist id="kuciste">
+            <option value="A4Tech"></option>
+            <option value="Aerocool"></option>
+            <option value="Alcatroz"></option>
+            <option value="Antec"></option>
+            <option value="ARMAGGEDDON"></option>
+            <option value="Asus"></option>
+            <option value="Azza"></option>
+            <option value="Be quiet!"></option>
+            <option value="Chieftec"></option>
+            <option value="Cooler Master"></option>
+            <option value="Corsair"></option>
+            <option value="Deep Cool"></option>
+            <option value="Falcon"></option>
+            <option value="Fractal Design"></option>
+            <option value="FSP"></option>
+            <option value="Gamemax"></option>
+            <option value="Genesis"></option>
+            <option value="Gigabyte"></option>
+            <option value="IG-Max"></option>
+            <option value="In Win"></option>
+            <option value="Inter-Tech"></option>
+            <option value="Javtec"></option>
+            <option value="Jonsbo"></option>
+            <option value="Kolink"></option>
+            <option value="LC Power"></option>
+            <option value="Microstar"></option>
+            <option value="MS Industrial"></option>
+            <option value="MSG"></option>
+            <option value="NJOY"></option>
+            <option value="No-Name"></option>
+            <option value="NZXT"></option>
+            <option value="Phanteks"></option>
+            <option value="Raidmax"></option>
+            <option value="Razer"></option>
+            <option value="Redragon"></option>
+            <option value="Sama"></option>
+            <option value="Seasonic"></option>
+            <option value="Sharkoon"></option>
+            <option value="SilentiumPC"></option>
+            <option value="Spawn"></option>
+            <option value="Stars Solutions"></option>
+            <option value="Thermaltake"></option>
+            <option value="Zalman"></option>
+          </datalist>
+
+          <datalist id="ssd">
+            <option value="A-DATA"></option>
+            <option value="Acer"></option>
+            <option value="Apacer"></option>
+            <option value="Biostar"></option>
+            <option value="Corsair"></option>
+            <option value="Crucial"></option>
+            <option value="Dahua"></option>
+            <option value="Element Revolution"></option>
+            <option value="Geil"></option>
+            <option value="Gigabyte"></option>
+            <option value="HyperX"></option>
+            <option value="Innovation IT"></option>
+            <option value="Intel"></option>
+            <option value="Intenso"></option>
+            <option value="KingFast"></option>
+            <option value="Kingmax"></option>
+            <option value="Kingston"></option>
+            <option value="Lexar"></option>
+            <option value="Maxtor"></option>
+            <option value="MicroFrom"></option>
+            <option value="Micron"></option>
+            <option value="Netac"></option>
+            <option value="Patriot"></option>
+            <option value="PNY"></option>
+            <option value="Samsung"></option>
+            <option value="SanDisk"></option>
+            <option value="Seagate"></option>
+            <option value="Silicon Power"></option>
+            <option value="Synology"></option>
+            <option value="Team Group"></option>
+            <option value="Transcend"></option>
+            <option value="TwinMOS"></option>
+            <option value="Verbatim"></option>
+            <option value="Western Digital"></option>
+          </datalist>
+
+          <datalist id="hdd">
+            <option value="Hitachi"></option>
+            <option value="Seagate"></option>
+            <option value="Synology"></option>
+            <option value="Toshiba"></option>
+            <option value="Western Digital"></option>
+          </datalist>
+
+          <datalist id="memorije">
+            <option value="A-DATA"></option>
+            <option value="Apacer"></option>
+            <option value="Corsair"></option>
+            <option value="Crucial"></option>
+            <option value="G.SKILL"></option>
+            <option value="Geil"></option>
+            <option value="Gigabyte"></option>
+            <option value="Gskill"></option>
+            <option value="Hynix"></option>
+            <option value="HyperX"></option>
+            <option value="Innovation IT"></option>
+            <option value="Kingmax"></option>
+            <option value="Kingston"></option>
+            <option value="LC Power"></option>
+            <option value="Lexar"></option>
+            <option value="Micron"></option>
+            <option value="Nanya"></option>
+            <option value="Patriot"></option>
+            <option value="Samsung"></option>
+            <option value="Silicon Power"></option>
+            <option value="Synology"></option>
+            <option value="Team Elite"></option>
+            <option value="Team Group"></option>
+            <option value="Transcend"></option>
+            <option value="TwinMOS"></option>
+            <option value="XSTRA"></option>
+
+          </datalist>
+
+          <datalist id="kuleri">
+            <option value="Aerocool"></option>
+            <option value="Alpenföhn"></option>
+            <option value="Antec"></option>
+            <option value="Arctic Cooling"></option>
+            <option value="Asus"></option>
+            <option value="Azza"></option>
+            <option value="Be quiet!"></option>
+            <option value="Chieftec"></option>
+            <option value="Cooler Master"></option>
+            <option value="Corsair"></option>
+            <option value="Cryorig"></option>
+            <option value="Deep Cool"></option>
+            <option value="Enermax"></option>
+            <option value="Falcon"></option>
+            <option value="Gamemax"></option>
+            <option value="Gigabyte"></option>
+            <option value="HP"></option>
+            <option value="Intel"></option>
+            <option value="Inter-Tech"></option>
+            <option value="LC Power"></option>
+            <option value="Marvo"></option>
+            <option value="Microstar"></option>
+            <option value="MS Industrial"></option>
+            <option value="Noctua"></option>
+            <option value="NZXT"></option>
+            <option value="Raidmax"></option>
+            <option value="Raijintek"></option>
+            <option value="Redragon"></option>
+            <option value="Sama"></option>
+            <option value="Scythe"></option>
+            <option value="Sharkoon"></option>
+            <option value="SilentiumPC"></option>
+            <option value="Silicon Power"></option>
+            <option value="Spire"></option>
+            <option value="Thermaltake"></option>
+            <option value="Xilence"></option>
+            <option value="Zalman"></option>
+          </datalist>
+
+          <datalist id="gfx">
+            <option value="AFOX"></option>
+            <option value="AMD"></option>
+            <option value="AsRock"></option>
+            <option value="Asus"></option>
+            <option value="Biostar"></option>
+            <option value="EVGA"></option>
+            <option value="Gainward"></option>
+            <option value="Gigabyte"></option>
+            <option value="HP"></option>
+            <option value="Inno3D"></option>
+            <option value="KFA2"></option>
+            <option value="Manli"></option>
+            <option value="Microstar"></option>
+            <option value="MSI"></option>
+            <option value="Palit"></option>
+            <option value="Patriot"></option>
+            <option value="PNY"></option>
+            <option value="PowerColor"></option>
+            <option value="Razer"></option>
+            <option value="Sapphire"></option>
+            <option value="XFX"></option>
+            <option value="Zotac"></option>"></option>
+          </datalist>
+
+          <datalist id="monitori">
+            <option value="Acer"></option>
+            <option value="AOC"></option>
+            <option value="Asus"></option>
+            <option value="BenQ"></option>
+            <option value="Cooler Master"></option>
+            <option value="Dahua"></option>
+            <option value="Dell"></option>
+            <option value="Gigabyte"></option>
+            <option value="HP"></option>
+            <option value="IIYAMA"></option>
+            <option value="LC Power"></option>
+            <option value="Lenovo"></option>
+            <option value="LG"></option>
+            <option value="Microstar"></option>
+            <option value="Philips"></option>
+            <option value="Prestigio"></option>
+            <option value="Samsung"></option>
+            <option value="Tesla"></option>
+            <option value="Viewsonic"></option>
+            <option value="Xiaomi"></option>
+          </datalist>
+
+          <datalist id="tastature">
+            <option value="A4Tech"></option>
+            <option value="Asus"></option>
+            <option value="Aula"></option>
+            <option value="Canyon"></option>
+            <option value="Click"></option>
+            <option value="Cooler Master"></option>
+            <option value="Corsair"></option>
+            <option value="Defender"></option>
+            <option value="Dell"></option>
+            <option value="Etech"></option>
+            <option value="Fury"></option>
+            <option value="Gamesir"></option>
+            <option value="Gembird"></option>
+            <option value="Genesis"></option>
+            <option value="Genius"></option>
+            <option value="Gigabyte"></option>
+            <option value="Gigatech"></option>
+            <option value="Hama"></option>
+            <option value="HP"></option>
+            <option value="HyperX"></option>
+            <option value="Lenovo"></option>
+            <option value="Logitech"></option>
+            <option value="Marvo"></option>
+            <option value="Media-Tech"></option>
+            <option value="Microsoft"></option>
+            <option value="Microstar"></option>
+            <option value="MOTOSPEED"></option>
+            <option value="Moye"></option>
+            <option value="MS Industrial"></option>
+            <option value="Natec"></option>
+            <option value="Omega"></option>
+            <option value="Philips"></option>
+            <option value="Rapoo"></option>
+            <option value="Razer"></option>
+            <option value="Redragon"></option>
+            <option value="Sandberg"></option>
+            <option value="Sharkoon"></option>
+            <option value="SPC Gear"></option>
+            <option value="SpeedLink"></option>
+            <option value="T-Dagger"></option>
+            <option value="Trust"></option>
+            <option value="UVI"></option>
+            <option value="Xtrike"></option>
+            <option value="Yenkee"></option>
+            <option value="Zalman"></option>
+          </datalist>
+
+          <datalist id="misevi">
+            <option value="A4Tech"></option>
+            <option value="Acer"></option>
+            <option value="Asus"></option>
+            <option value="Aula"></option>
+            <option value="BenQ"></option>
+            <option value="Canyon"></option>
+            <option value="Click"></option>
+            <option value="Cooler Master"></option>
+            <option value="Corsair"></option>
+            <option value="Defender"></option>
+            <option value="Dell"></option>
+            <option value="Etech"></option>
+            <option value="Fantech"></option>
+            <option value="Fury"></option>
+            <option value="Gembird"></option>
+            <option value="Genesis"></option>
+            <option value="Genius"></option>
+            <option value="Gigabyte"></option>
+            <option value="Gigatech"></option>
+            <option value="Hama"></option>
+            <option value="Honor"></option>
+            <option value="HP"></option>
+            <option value="HyperX"></option>
+            <option value="Javtec"></option>
+            <option value="LC Power"></option>
+            <option value="Lenovo"></option>
+            <option value="Logitech"></option>
+            <option value="Mad Catz"></option>
+            <option value="Marvo"></option>
+            <option value="Media-Tech"></option>
+            <option value="Microsoft"></option>
+            <option value="Microstar"></option>
+            <option value="Modecom"></option>
+            <option value="MOTOSPEED"></option>
+            <option value="Moye"></option>
+            <option value="MS Industrial"></option>
+            <option value="Philips"></option>
+            <option value="Rapoo"></option>
+            <option value="Razer"></option>
+            <option value="Redragon"></option>
+            <option value="Sandberg"></option>
+            <option value="Sharkoon"></option>
+            <option value="SPC Gear"></option>
+            <option value="SpeedLink"></option>
+            <option value="T-Dagger"></option>
+            <option value="Tracer"></option>
+            <option value="Trust"></option>
+            <option value="UVI"></option>
+            <option value="Vivanco"></option>
+            <option value="Xiaomi"></option>
+            <option value="Xtrike"></option>
+            <option value="Yenkee"></option>
+          </datalist>
+
+          <datalist id="zvucnici">
+            <option value="Aula"></option>
+            <option value="AverMedia"></option>
+            <option value="Blueberry"></option>
+            <option value="Canyon"></option>
+            <option value="Click"></option>
+            <option value="Defender"></option>
+            <option value="Dell"></option>
+            <option value="EDEN"></option>
+            <option value="Energy Sistem"></option>
+            <option value="Fury"></option>
+            <option value="Gembird"></option>
+            <option value="Genesis"></option>
+            <option value="Genius"></option>
+            <option value="Gigatech"></option>
+            <option value="Grundig"></option>
+            <option value="Hisense"></option>
+            <option value="HP"></option>
+            <option value="Intex"></option>
+            <option value="JBL"></option>
+            <option value="LG"></option>
+            <option value="Logitech"></option>
+            <option value="Marvo"></option>
+            <option value="Mi"></option>
+            <option value="MicroLab"></option>
+            <option value="Microsoft"></option>
+            <option value="MikroTik"></option>
+            <option value="Motorola"></option>
+            <option value="MS Industrial"></option>
+            <option value="Panasonic"></option>
+            <option value="Paxcess"></option>
+            <option value="Prestigio"></option>
+            <option value="Promate"></option>
+            <option value="Razer"></option>
+            <option value="Ready 2 Music"></option>
+            <option value="Redragon"></option>
+            <option value="Samsung"></option>
+            <option value="Sandberg"></option>
+            <option value="Sharp"></option>
+            <option value="SONOS"></option>
+            <option value="SpeedLink"></option>
+            <option value="SWISSTEN"></option>
+            <option value="Trust"></option>
+            <option value="Ubit"></option>
+            <option value="VIVAX"></option>
+            <option value="Xiaomi"></option>
+            <option value="Xplore"></option>
+            <option value="Xtrike"></option>
+            <option value="Xwave"></option>
+            <option value="Yenkee"></option>
+          </datalist>
+
+          <datalist id="slusalice">
+           <option value="A4Tech"></option>
+           <option value="Apple"></option>
+           <option value="Asus"></option>
+           <option value="Aula"></option>
+           <option value="AverMedia"></option>
+           <option value="Bang Olufsen"></option>
+           <option value="Blueberry"></option>
+           <option value="Buddyphones"></option>
+           <option value="Canyon"></option>
+           <option value="Click"></option>
+           <option value="Cooler Master"></option>
+           <option value="Corsair"></option>
+           <option value="Creative"></option>
+           <option value="Defender"></option>
+           <option value="Delicate Amazing"></option>
+           <option value="Dell"></option>
+           <option value="Energy Sistem"></option>
+           <option value="Fantech"></option>
+           <option value="Fury"></option>
+           <option value="Gembird"></option>
+           <option value="Genesis"></option>
+           <option value="Genius"></option>
+           <option value="Gigatech"></option>
+           <option value="Happy Plugs"></option>
+           <option value="Hoco"></option>
+           <option value="Honor"></option>
+           <option value="House of Marley"></option>
+           <option value="HP"></option>
+           <option value="HyperX"></option>
+           <option value="iLuv"></option>
+           <option value="Innovation IT"></option>
+           <option value="Intex"></option>
+           <option value="ITEL"></option>
+           <option value="Jam Audio"></option>
+           <option value="JBL"></option>
+           <option value="JLAB"></option>
+           <option value="Lenovo"></option>
+           <option value="LG"></option>
+           <option value="Logitech"></option>
+           <option value="Manhattan"></option>
+           <option value="Marvo"></option>
+           <option value="Media-Tech"></option>
+           <option value="Mi"></option>
+           <option value="Microsoft"></option>
+           <option value="Microstar"></option>
+           <option value="Motorola"></option>
+           <option value="MOTOSPEED"></option>
+           <option value="Moye"></option>
+           <option value="MS Industrial"></option>
+           <option value="Nedis"></option>
+           <option value="Nothing"></option>
+           <option value="OnePlus"></option>
+           <option value="Panasonic"></option>
+           <option value="Philips"></option>
+           <option value="Pioneer"></option>
+           <option value="Promate"></option>
+           <option value="QCY"></option>
+           <option value="Rampage"></option>
+           <option value="Razer"></option>
+           <option value="Ready 2 Music"></option>
+           <option value="Ready 2 Sport"></option>
+           <option value="REALME"></option>
+           <option value="Recon"></option>
+           <option value="Redragon"></option>
+           <option value="Remax"></option>
+           <option value="Sades"></option>
+           <option value="Sandberg"></option>
+           <option value="SENCOR"></option>
+           <option value="Sharkoon"></option>
+           <option value="Skylanders"></option>
+           <option value="Sony"></option>
+           <option value="SoundGreen"></option>
+           <option value="Spawn"></option>
+           <option value="SPC Gear"></option>
+           <option value="SpeedLink"></option>
+           <option value="SWISSTEN"></option>
+           <option value="T-Dagger"></option>
+           <option value="Trust"></option>
+           <option value="Turtle Beach"></option>
+           <option value="UVI"></option>
+           <option value="Vivanco"></option>
+           <option value="Xiaomi"></option>
+           <option value="Xipin"></option>
+           <option value="Xplore"></option>
+           <option value="Xtrike"></option>
+           <option value="Xwave"></option>
+           <option value="Yealink"></option>
+           <option value="Yenkee"></option>
+           <option value="Zalman"></option>
+          </datalist>
+
+
+          <datalist id="prodavac">
+            <option value="Bc Group">
+            <option value="VIP House">
+            <option value="Gigatron"></option>
+            <option value="Tehnomania"></option>
+            <option value="tehnomedija"></option>
+            <option value="Monitor Sistemi"></option>
+            <option value="Game Centar"></option>
+            <option value="List computers"></option>
+            <option value="Atom computers"></option>
+            <option value="Ewe Comp Doo"></option>
+            <option value="Desk"></option>
+            <option value="Exceed"></option>
+            <option value="CT Shop"></option>
+            <option value="a maze"></option>
+            <option value="Trim Computers"></option>
+            <option value="KUPLJENO"></option>
+          </datalist>
+          
+        </table>
+      
+      </article>
+
+
+<!-- **************postavka za snimanje napravljenog PDF fajla******** -->
+    <article id="upit">
+      <h3 id="ttt">Ime    PDF    fajla</h3>
+      <input type="text" id="naziv" placeholder="upisi ime fajla">
+      <button id="snimi">SNIMI</button>
+  </article>
+
+
+<!-- *************postavka za smeštanje konfiguracije u ostavu(podrum) -->
+  <article>
+      <div id="ram">
+        <div id="linija2" class="katanac">smesti konfiguraciju u ostavu</div>
+        <div id="linija3" class="katanac">pozovi konfiguraciju iz ostave</div>
+        <div id="linija4" class="katanac">obrisi konfiguraciju iz ostave</div>
+        <div id="linija5" class="katanac">zatvori meni</div>
+      </div>
+
+      <section id="upit_kon">
+        <h3 id="ttt">Naziv konfiguracije    </h3>
+        <input type="text" id="naziv_kon" placeholder="upisi ime konfiguracije" autofocus = "autofocus">
+        <button id="snimi_kon">SNIMI</button>
+      </section>
+
+
+      <section id="ostava_kon">
+        <h3 id="rrr">ostava </h3>
+          <div id="zatvori">
+            <h1 id="slovox">X</h1>
+          </div>
+          <div id="divovi"></div>
+
+
+      </section>
+
+      <section id="brisanje_kon">
+        <p id="paragraf">	da li stvarno zelite da obrisete ovu konfiguraciju</p>
+
+        <div class="odluka" id="da">DA</div>
+        <div class="odluka" id="ne">NE</div>
+        
+        
+
+      </section>
+
+  </article>
+
+
+ 
+
+        <script src="PDF_framework/pdfmake.0.1.68.min.js"></script>
+        <script src="PDF_framework/vfs_fonts.js"></script>
+
+        <script src="js/kupleno.js"></script>
+        <script src="js/konfig.js"></script>
+        <script src="js/podrum.js"></script>
+        <script src="js/zbir.js"></script>
+
+  </body>
+
+  
+</html>

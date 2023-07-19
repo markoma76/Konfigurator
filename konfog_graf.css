@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    background-image: url('slike/tastatura.jpeg');
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    margin-left: auto;margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 105px;
+    width: 1200px;
+}
+
+
+#naslov{
+    text-align:center ;
+    font-size: 2.7cm;
+    color:transparent;
+    font-family: 'Montserrat Medium';
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px red;
+   
+}
+
+.meni{
+    color: red;
+    font-family: 'Montserrat Medium';
+    letter-spacing: 4px;
+    font-size: 1.7cm;
+}
+
+.meni:hover{
+    cursor: pointer;
+    color: azure;
+
+}
+
+
+table{
+    color:antiquewhite;
+    margin-left: auto; margin-right: auto;
+   
+    
+
+}
+
+th{
+    font-family: Zaobljen;
+    font-size: x-large;
+    text-transform: uppercase;
+    background-color: rgb(5, 0, 155,0.2);
+}
+
+
+td{
+    text-align: center;
+}
+
+
+
+.komponenta{
+   width: 220px;
+   font-family: Sport;
+   text-shadow: 3px 3px 5px rgb(5, 0, 155);
+   font-size:18px;
+
+}
+
+input{
+    background-color: transparent;
+    text-align: center;
+    font-family: Crtani;
+    font-size:22px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border-color: black;
+    color: beige;
+}
+
+#crc,#cool,#ploca,#grafika,#mems,#hard1,#solid1,#hard2,#solid2,#tower,#pow,#cd,#mon,#kybrd,#mose,#sound,#slusa{
+    text-shadow: 5px 3px 10px green;
+}
+
+#pr_cena,#hl_cena,#mp_cena,#gk_cena,#mm_cena,#hd1_cena,#sd1_cena,#hd2_cena,#sd2_cena,#tw_cena,#pw_cena,#cd_cena,#mn_cena,#kb_cena,#mi_cena,#zv_cena,#sl_cena{
+    text-shadow: 5px 3px 10px red;
+}
+
+#pr_prodavac,#hl_prodavac,#mp_prodavac,#mm_prodavac,#gk_prodavac,#hd1_prodavac,#sd1_prodavac,#hd2_prodavac,#sd2_prodavac,#tw_prodavac,#pw_prodavac,#cd_prodavac,#mn_prodavac,#kb_prodavac,#mi_prodavac,#zv_prodavac,#sl_prodavac{
+    text-shadow: 5px 3px 10px yellow;
+}
+
+#pr_oznaka,#hl_oznaka,#mp_oznaka,#mm_oznaka,#gk_oznaka,#hd1_oznaka,#sd1_oznaka,#hd2_oznaka,#sd2_oznaka,#tw_oznaka,#pw_oznaka,#cd_oznaka,#mn_oznaka,#kb_oznaka,#mi_oznaka,#zv_oznaka,#sl_oznaka{
+    text-shadow: 5px 3px 10px blueviolet;
+}
+
+#upit{
+    display: none	;
+    position: absolute;
+    top: 20%;left: 40%;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px red;
+    width: 350px;
+    height: 130px;
+    border: 15px outset rgb(126, 126, 126);
+    background-color: darkgrey;
+}
+
+#ttt{
+    margin-top: 0px;
+    font-family: Tackasti;
+    font-size: 40px;
+}
+
+#naziv{
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    background-color: black;
+   
+}
+
+#snimi{
+    position: relative;
+    top: -20px;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#cena{
+    font-family: Tackasti;
+    text-align: right;
+    letter-spacing: 10px;
+    font-size: 30px;
+    padding-right: 50px;
+    background-color: rgb(69, 4, 4,0.6);
+    color: rgb(255, 255, 255);
+}
+
+#ukupno_cena{
+    background-color: red;
+    text-align: center;
+    font-family: Crtani;
+    font-size:33px;
+    border-radius: 20px;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
